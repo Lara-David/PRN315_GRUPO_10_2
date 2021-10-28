@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+        
+        
+        <h:form id="principal">
+        <div align="center">
+            <p:panel id="panel" header="MANTENIMIENTO DE EMPLEADO" >
+                <p:panelGrid columns="2">
+                    <h:outputLabel value ="Nombre Empleado "/> <!-- etiqueta -->
+                    <p:inputText id="itNombre" value ="#{empleadoForm.empleado.nombres}" /> <!-- inputText con referencia al nombre de empresa de la entidad -->
+                </p:panelGrid>
+            </p:panel>
+        </div>
+        </h:form>
+        
+        
+        <ui:composition template="./PlantillaGrupo10.xhtml">
+
+            <ui:define name="content">
+                content
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
